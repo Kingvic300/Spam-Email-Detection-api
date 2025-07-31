@@ -1,0 +1,55 @@
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+
+# Flask
+instance/
+*.pyc
+__pycache__/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Database files
+*.db
+*.sqlite
+spam_detection.db
+
+# Logs
+*.log
+logs/
+
+# Machine Learning Models
+models/*.pkl
+models/*.joblib
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Backup files
+*.bak
+*.backup
