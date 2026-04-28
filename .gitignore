@@ -1,5 +1,7 @@
 # Environment files
 .env
+.env.*
+!.env.example
 .env.local
 .env.development
 .env.production
@@ -7,11 +9,16 @@
 
 # Flask
 instance/
-*.pyc
 __pycache__/
+*.py[cod]
 .pytest_cache/
 .coverage
 htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.python-version
 
 # Database files
 *.db
@@ -40,6 +47,8 @@ Thumbs.db
 venv/
 env/
 .venv/
+ENV/
+myenv/
 
 # Distribution / packaging
 dist/
@@ -53,3 +62,6 @@ celerybeat.pid
 # Backup files
 *.bak
 *.backup
+
+# Local tooling
+.codex/
